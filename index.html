@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pacman</title>
+  <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body onload="init()" onkeydown="movePacman(event)">
+ <header>
+     <h3>Score: <span>0</span> </h3> 
+ </header> 
+ <div class="board-container"></div>
+ <div class="game-over" hidden>
+   <h2 class="header">Game Over</h2>
+   <button onclick="init()">Restart</button>
+ </div>
+ <div class="play-again" hidden>
+   <h2 class="header">You are awesome!! winner:)</h2>
+   <button onclick="init()">Play Again</button>
+ </div>
+ 
+ <script src="js/util.js"></script> 
+ <script src="js/pacman.js"></script>
+ <script src="js/ghosts.js"></script>
+ <script src="js/game.js"></script>
+</body>
+</html>
+
